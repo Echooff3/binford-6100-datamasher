@@ -1,0 +1,26 @@
+{
+  "name": "binford-6100-datamasher",
+  "version": "0.0.1",
+  "description": "Query JSON like SQL.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "npm run build:dev && node build/index.js",
+    "build": "emcc -O2 src/main.c -o build/index.js",
+    "build:dev": "emcc src/main.c -o build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Echooff3/binford-6100-datamasher.git"
+  },
+  "keywords": [
+    "JSON",
+    "SQL",
+    "Binford"
+  ],
+  "author": "echooff3",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/Echooff3/binford-6100-datamasher/issues"
+  },
+  "homepage": "https://github.com/Echooff3/binford-6100-datamasher#readme"
+}
